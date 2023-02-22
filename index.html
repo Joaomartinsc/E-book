@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <title>E-book</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+  </head>
+  <body >
+    <img class="zap" src="imgsinvest/wpp.png" onclick="zap()">
+    <div class="container1">
+      <div class="esquerda">
+        <h1 class="h1"> Guia de investimentos para médicos</h1>
+        <p class="p1">A InvestSmart traz para você, médico, um guia de investimentos que tem a intenção de orientar o Plano de Investimentos da sua clínica ou consultório, e ainda falar sobre os investimentos também para Pessoa Jurídica. </p>
+        <div class="span">
+          <span></span>
+          <span></span>
+        </div>
+        <img class="book" src="imgsinvest/guia.png">
+      </div>
+      <div class="direita">
+        <form class="form" onsubmit="sendMail(event)">
+          <h1 class="hh">Baixe esse conteudo gratuitamente!</h1>
+          <label>Nome*</label>
+          <input class="inputNome" required id="nome" placeholder="nome">
+          <label>Email*</label>
+          <input class="inputEmail" type="email" required id="email" placeholder="email">
+          <label>Telefone*</label> 
+          <input class="inputTelefone" type="text" onkeypress="$(this).mask('(00) 00000-0000')" id="phone" maxlength="17" placeholder="telefone" >
+          
+
+         
+          <label>Capital disponível para investimentos*</label>
+          <select id="capital">
+            <option value="abaixo de 100 mil">abaixo de 100 mil</option>
+            <option value="100 mil até 300mi">100 mil até 300mi</option>
+            <option value="300 mil até 500mil">300 mil até 500mil</option>
+            <option value="500 mil até 1 milhão">500 mil até 1 milhão</option>
+            <option value="1 milhão até 5 milhões">1 milhão até 5 milhões</option>
+            <option value="mais de 5 milhões">mais de 5 milhões</option>
+          </select>
+          <label>
+            <input type="checkbox" value="true" id="agree" /> Eu concordo em receber comunicações. </label>
+          </p>
+          <p class="p2">A nossa empresa está comprometida a proteger e respeitar sua privacidade, utilizaremos seus dados apenas para fins de marketing. Você pode alterar suas preferências a qualquer momento. </p>
+          <button class="baixar" type="submit">Solicitar ebook gratuitamente!</button>
+        </form>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="cima">
+        <div class="cimaEsquerda">
+          <h1 class="h2">Aprenda como organizar seus investimentos privados, assim como organizar sua clinica ou consultório. </h1>
+          <p class="p3">Este ebook contém tudo o que você precisa saber para dar o primeiro passo no momento de obter uma carteira de investimentos. </p>
+        </div>
+        <div class="cimaDireita">
+          <img class="medico" src="imgsinvest/medico.jpg">
+        </div>
+      </div>
+      <div class="baixo">
+        <div class="baixoEsquerda">
+          <h1 class="h3">Perfis de Investidor</h1>
+          <p class="p4">Descubra seu perfil de investidor, e com ele já traçado, poderá conhecer os ativos disponíveis no mercado. O que de fato vai definir o tipo de investidor que você, médico ou profissional da saúde é, é o perfil no qual você se encaixa. </p>
+        </div>
+        <div class="baixoCentro">
+          <h1 class="h4">Produtos disponíveis no mercado de investimentos</h1>
+          <p class="p5">Você sabe o que os termos Rentabilidade, Liquidez e Risco significam? Nesse ebook, você saberá o que são essas variáveis importantíssimas que devem ser analisadas ao montar uma carteira de investimentos. </p>
+        </div>
+        <div class="baixoDireita">
+          <h1 class="h5">Renda Fixa e Variável</h1>
+          <p class="p6">Baixe o ebook e descubra quais são os investimentos mais seguros do mercado. Investimento em ações, Fundos Imobiliários e ETF's são apenas alguns dos diversos tópicos abordados nesse material. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <h1 class="h6"> Quer conhecer ativos interessantes para quem possui uma clínica ou consultório e deseja investir os seus recursos? Baixe o ebook agora mesmo! </h1>
+      <button class="baixarGratuitamnte" onclick="scrollUp()">Baixar ebook gratuitamente</button>
+    </div>
+    <div class="container4">
+      <div class="ultimaEsquerda">
+        <h1 class="h7"> A diferença de contar com uma assessoria de investimentos </h1>
+        <p1 class="p7"> Sabemos que entender bem o mercado financeiro pode ser um desafio e tanto para alguns investidores, e até mesmo para médicos e profissionais da área da saúde. Por isso conte com a InvestSmart para conhecer as melhores opções de carteiras de investimentos para o seu perfil. </p1>
+      </div>
+      <div class="ultimaDireita">
+        <img class="escritorio" src="imgsinvest/escritorio.jpg">
+      </div>
+    </div>
+    <div class="pe">
+      <img class="prancheta" src="imgsinvest/prancheta.png">
+    </div>
+    <script src="e-book.js">
+    
+      
+</script>
+
+  </body>
+</html>

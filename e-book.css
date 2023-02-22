@@ -1,0 +1,293 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+img {
+    border-radius: 15px;
+}
+
+.zap {
+     position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1{
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url('imgsinvest/medicoFundo.png');
+    background-size: cover;
+    color:#ffffff;
+    text-align: center;
+}
+.back{
+    height:100%;
+    width: 100%;
+}
+.span{
+    height:120px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+@keyframes move {
+    0%{margin-top: 0;}
+    30%{margin-top: 30px;}
+    50%{margin-top: 0px;}
+    75%{margin-top: -50px;}
+    100%{margin-top: 0px;}
+
+
+    100%{margin-top: 0;}
+    
+}
+span{
+    width: 10px;
+    height: 40px;
+    background: white;
+    border-radius:6px;
+    margin: -16px;
+    animation: move 1.1s infinite ease-in-out;
+}
+span:nth-of-type(1){
+    transform: rotate(45deg);
+}
+
+span:nth-of-type(2){
+    transform: rotate(-45deg);
+}
+
+
+.direita{
+    height: 100%;
+    /* width: 50%; */
+    display: flex;
+    align-items:baseline;
+    justify-content:center;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+
+.direita > .form {
+    width: 350px;
+    text-align: center;
+}
+
+.esquerda{
+    height: 100%;
+    width: 300px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+    
+.baixar{
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background-color:#c7d341;
+    background-size: cover;
+    
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    color: black;
+}
+.inputNome, .inputEmail, .inputTelefone, .inputCapital, select {
+    height: 35px;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: unset;
+}
+.espacoEsquerda{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+}
+.espacoDireita{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+}
+.book{
+    height: 378px;
+} 
+.container2{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.cima {
+    display: flex;
+    flex-direction: row;
+    width:60% ;
+    background-color:#c7d341;
+    padding: 50px 25px;
+    border-radius: 5px;
+
+}
+
+.cimaEsquerda{
+    height: 100%;
+    text-align: center;
+}
+.cimaDireita{
+    height: 100%;
+    width: 50%;
+}
+.medico{
+    width:100%;
+}
+.baixo{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+.baixoEsquerda, .baixoDireita, .baixoCentro{
+    text-align: center;
+    margin: 0 15px;
+}
+.container3{
+    height: 250px;
+  
+    text-align: center;
+    background-color:#c7d341;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.baixarGratuitamnte{
+    height: 48px;
+    width: 350px;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container4{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    text-align: center;
+    color: black;
+}
+.ultimaEsquerda{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ultimaDireita{
+    width: 375px;
+}
+.escritorio{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+   }
+
+   .ultimaDireita {
+    width: 100%;
+   }
+
+   .direita, .esquerda {
+    margin: 0;
+   }
+   .escritorio{
+    width: 50%;
+}
+
+.cimaDireita {
+    width: 100%;
+}
+    .medico {
+        width: 150px;
+        margin: 0;
+   }
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+   }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+   }
+    .container3 {
+        height: 400px;
+   }
+    .cima {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+   }
+    .baixo {
+        display: flex;
+        flex-direction: column;
+   }
+}
+.pe{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: black;
+
+}
+
+.prancheta{
+    height: 75px;
+    width:135px ;
+} 
